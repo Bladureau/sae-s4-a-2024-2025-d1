@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f3b5c;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-left ul, .nav-right ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li, .nav-right ul li {
+    margin-right: 20px;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li a i {
+    margin-right: 5px;
+}
+
+/* Icônes à droite */
+.nav-right ul li {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Version */
+.version {
+    font-size: 14px;
+}
+
+/* Avatar utilisateur */
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+}

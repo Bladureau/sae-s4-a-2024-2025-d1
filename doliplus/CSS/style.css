@@ -1,0 +1,88 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #2f3b5c 50%, #eeeeee 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteneur principal */
+.login-container {
+    text-align: center;
+}
+
+/* Boîte de connexion */
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+/* Logo Dolibarr */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2f3b5c;
+    margin-bottom: 20px;
+}
+
+/* Champs de saisie */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Bouton de connexion */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #2f3b5c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: #2f3b5c 1px solid;
+    background: white;
+}
+
+/* Liens */
+.links {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #2f3b5c;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

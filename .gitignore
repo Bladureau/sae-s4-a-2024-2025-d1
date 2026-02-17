@@ -1,0 +1,9 @@
+#Intellij
+/.idea
+
+# YASMF
+/doliplus/lib
+/reports
+.phpunit.result.cache
+composer.lock
+/doliplus/save

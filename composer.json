@@ -1,0 +1,29 @@
+{
+  "name": "yasmf/yasmf_doliplus",
+  "config": {
+    "vendor-dir": "doliplus/lib/vendor"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/the-yasmf-project/yasmf"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "controllers\\": "doliplus/controllers",
+      "services\\": "doliplus/services",
+      "application\\": "doliplus/application"
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "phpunit/phpunit": "10.0.*",
+    "phpstan/phpstan": "1.10.*",
+    "ext-pdo": "*",
+    "yasmf/yasmf": ">=1.6.1",
+    "ext-curl": "*",
+    "ext-bcmath": "*",
+    "ext-intl": "*"
+  }
+}

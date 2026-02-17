@@ -1,0 +1,147 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f3b5c;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-left ul, .nav-right ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li, .nav-right ul li {
+    margin-right: 20px;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li a i {
+    margin-right: 5px;
+}
+
+/* Icônes à droite */
+.nav-right ul li {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Version */
+.version {
+    font-size: 14px;
+}
+
+/* Avatar utilisateur */
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #2f3b5c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #141d2f;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.card-header {
+    font-weight: bold;
+}
+.card-body form {
+    width: 100%;
+    display: flex;
+}
+.bg-primary {
+    background-color: #2f3b5c !important;
+}
+.bg-secondary {
+    background-color: #4e5d78 !important;
+}
+.bg-success {
+    background-color: #5cb85c !important;
+}
+
+.btnAccesRapide {
+    padding: 5px;
+    padding-inline: auto;
+    background: #2f3b5c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1; 
+    width: 100%;
+}
+
+.btnAccesRapide:hover {
+    background: #141d2f;
+}
+
+.table th {
+    background-color: #4e5d78;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-left ul, .nav-right ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-left ul li, .nav-right ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .user {
+        justify-content: center;
+    }
+}

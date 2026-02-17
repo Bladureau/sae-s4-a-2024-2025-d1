@@ -1,0 +1,435 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f3b5c;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-left ul, .nav-right ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li, .nav-right ul li {
+    margin-right: 20px;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li a i {
+    margin-right: 5px;
+}
+
+/* Avatar utilisateur */
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Barre latérale */
+.sidebar {
+    width: 250px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    color: #2f3b5c;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #2f3b5c;
+    font-weight: bold;
+}
+
+/* Contenu principal */
+.content {
+    flex-grow: 1;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.content h2 {
+    color: #2f3b5c;
+    margin-bottom: 20px;
+}
+
+/* Tableau de bord */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Widget */
+.widget {
+    background: #f9f9f9;
+    padding: 20px;
+    flex: 1;
+    margin-right: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.widget h3 {
+    color: #2f3b5c;
+    margin-bottom: 10px;
+}
+
+/* Icônes factures */
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.icon-placeholder {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+/* Tableau des factures */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #2f3b5c;
+    color: white;
+}
+
+td {
+    background: #f9f9f9;
+}
+/* --------------------------------Styles des factures------------------------------------------------------------- */
+.facture {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #2f3b5c;
+}
+
+.facture h3 {
+    color: #2f3b5c;
+    margin-bottom: 10px;
+}
+
+.details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Statut de paiement */
+.paid {
+    color: green;
+    font-weight: bold;
+}
+
+.unpaid {
+    color: red;
+    font-weight: bold;
+}
+
+/* Conteneur du tableau */
+.table-container {
+    margin-top: 10px;
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #2f3b5c;
+    color: white;
+}
+
+/* Style du tableau des fournisseurs */
+.fournisseurs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.fournisseurs-table th, .fournisseurs-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.fournisseurs-table th {
+    background: #2f3b5c;
+    color: white;
+    font-weight: bold;
+}
+
+.fournisseurs-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.fournisseurs-table tr:hover {
+    background: #ececec;
+}
+
+/* Style spécifique pour le chiffre d'affaires */
+.ca-high {
+    color: green;
+    font-weight: bold;
+}
+
+.ca-low {
+    color: red;
+    font-weight: bold;
+}
+
+.info-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background: #2f3b5c;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background: #ff0000;
+}
+
+.btn:hover {
+    background: #141d2f;
+}
+
+.btn-danger:hover {
+    background: #8B0000;
+}
+
+.facture-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.facture-row p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.statut-payee {
+    color: green;
+    font-weight: bold;
+}
+
+.statut-non-payee {
+    color: red;
+    font-weight: bold;
+}
+
+.btn-details {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-details:hover {
+    background-color: #0056b3;
+}
+
+.facture-details {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+.facture-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.facture-table th, .facture-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Ajouter une classe hidden pour les éléments cachés */
+.hidden-mobile {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-left ul, .nav-right ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-left ul li, .nav-right ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .user {
+        justify-content: center;
+    }
+
+    /* Cacher la table desktop et afficher celle du mobile */
+    .desktop-filters {
+        display: none !important;
+    }
+    
+    .mobile-filters {
+        display: table !important;
+        width: 100%;
+    }
+    
+    /* Ajuster la taille des inputs */
+    .mobile-filters .flat {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Ajuster l'espacement */
+    .mobile-filters td {
+        padding: 5px;
+    }
+    
+    /* Style pour le tableau des résultats */
+    .facture-row .col-md-2 {
+        margin-bottom: 5px;
+    }
+
+    .facture-details {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .card {
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .facture-table {
+        font-size: 0.85rem;
+    }
+
+    .facture-table th {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .facture-table td {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
+
+/* Pour les appareils plus grands */
+@media (min-width: 769px) {
+    .mobile-filters {
+        display: none !important;
+    }
+}

@@ -1,0 +1,10 @@
+services:
+  doliplus:
+    image: webdevops/php-apache-dev:8.2-alpine
+    container_name: yasmf_doliplus_app
+    working_dir: /app/
+    ports:
+      - 8080:80
+    volumes:
+      - ./:/app/
+  
